@@ -1,0 +1,10 @@
+ano = 1
+
+while ano % 4 != 0:
+    ano = int(input('forneça um ano bissexto:'))
+
+if ano % 100 == 0 and ano % 400 == 0:
+        print('o ano:',ano,'é bissexto.')
+
+elif ano % 4 == 0:
+        print('o ano:',ano,' é bissexto.')
