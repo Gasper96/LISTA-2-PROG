@@ -1,0 +1,44 @@
+n1 = float(input('forneça o primeiro número:'))
+n2 = float(input('forneça o segundo número:'))
+op = str(input('que tipo de operação você pretende fazer? (+)(-)(*)(/):'))
+
+pori = 0
+pon = 0
+
+if op == '+':
+  res = n1 + n2
+  print('o resultado é:', res)
+
+if op == '-':
+  res = n1 - n2
+  print('o resultado é:', res)
+
+if op == '*':
+  res = n1 * n2
+  print('o resultado é:', res)
+
+if op == '/':
+  res = n1 / n2
+  print('o resultado é:', res)
+
+if res % 2 == 0:
+  pori = 'par'
+
+else:
+  pori = 'impar'
+
+if res >= 0:
+  pon = 'Positivo'
+
+else:
+  pon = 'Negativo'
+
+if int(res) == res:
+  print(res, 'é inteiro') 
+
+else:
+  print(res, 'é decimal')
+
+print(pori,'e', pon,'.')
+
+
