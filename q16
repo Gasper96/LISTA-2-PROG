@@ -1,0 +1,21 @@
+a = int(input('Quantos litros de Alcool você deseja ? '))
+g = int(input('Quantos litros de Gasolina você deseja ? '))
+
+vala = a * 1.9
+valg = g * 2.5
+
+if a <= 20:
+  vala * 0.97
+
+if a > 20:
+  vala * 0.95
+
+if g <= 20:
+  valg * 0.96
+
+if g > 20:
+  valg * 0.94
+
+print('você comprou',a,'litros de Alcool e',g ,'litros de Gasolina')
+print('o valor total a ser pago é:',(vala + valg))
+
