@@ -1,0 +1,8 @@
+n = float(input('forneça um valor:'))
+
+if int(n) == n:
+  print(n, 'é inteiro.')
+
+else:
+  print(n, 'é decimal.')
+
