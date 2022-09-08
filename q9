@@ -1,0 +1,20 @@
+n = int(input('forneça um valor menor que 1000:'))
+
+cont1 = 0
+cont2 = 0
+cont3 = 0
+
+if n > 0 and n < 1000:
+  while n >= 100:
+    cont1 = cont1 + 1
+    n = n - 100
+
+  while n >= 10:
+    cont2 = cont2 + 1
+    n = n - 10
+
+  while n >= 1:
+    cont3 = cont3 + 1
+    n = n - 1
+
+  print('o valor fornecido contém',cont1,'centenas,',cont2,'dezenas,',cont3,'unidades.')
