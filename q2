@@ -1,0 +1,25 @@
+rem = float(input('forneça a sua remuneração por hora trabalhada:'))
+hor = int(input('forneça a quantidade de horas trabalhadas no mês:'))
+
+sal = rem * hor
+fgts = sal * 0.11
+inss = sal * 0.1
+
+if sal <= 900:
+  ir = 0
+
+if 900 < sal <= 1500:
+  ir = sal * 0.05
+
+if 1500 < sal <= 2500:
+  ir = sal * 0.1
+
+if 2500 < sal:
+  ir = sal * 0.2
+
+print('seu salario Bruto(antes dos descontos.) é:',sal,'R$.')
+print('Você terá que pagar:',round(ir),'R$ em imposto de renda.')
+print('você terá que pagar:',round(inss),'R$ ao INSS.')
+print('você teria que pagar:',round(fgts),'R$ de FGTS, Porém será custeado pela empresa.')
+print('o valor total a ser descontado do seu salário será:',(inss + ir),'R$, o desconto do sindicato nao foram incluidos.')
+print('seu salario desse mês será:',(sal - (inss + ir)),'R$.')
