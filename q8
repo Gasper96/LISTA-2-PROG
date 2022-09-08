@@ -1,0 +1,17 @@
+dia = int(input('dia:'))
+mes = int(input('mês:'))
+ano = int(input('ano:'))
+
+while dia <= 0 or dia > 31:
+  print(dia,'não é um dia válido.')
+  dia = int(input('forneça um dia possível:'))
+
+while mes <= 0 or mes > 12:
+  print(mes,'não é um mes válido.')
+  mes = int(input('forneça um mês possível:'))
+
+while ano < 0 or ano > 2022:
+  print(ano,'não é um ano válido.')
+  ano = int(input('forneça um ano possível:'))
+
+print(dia,'/',mes,'/',ano,'é uma data possível.')
