@@ -1,0 +1,31 @@
+n1 = float(input('informe a nota da primeira avaliação:'))
+n2 = float(input('informe a nota da segunda avaliação:'))
+
+med = (n1 + n2) / 2
+
+if 9 <= med == 10:
+  conc = 'A'
+  msg = 'APROVADO.'
+
+if 7.5 <= med < 9:
+  conc = 'B'
+  msg = 'APROVADO.'
+
+if 6 <= med < 7.5:
+  conc = 'C'
+  msg = 'APROVADO.'
+
+if 4 <= med < 6:
+  conc = 'D'
+  msg = 'REPROVADO.'
+
+if 4 > med:
+  conc = 'E'
+  msg = 'REPROVADO.'
+
+print('As notas do aluno foram:',n1 ,n2 ,'\n a média é:',med)
+print('O aluno ficou com conceito:', conc,',', msg)
+
+
+
+
