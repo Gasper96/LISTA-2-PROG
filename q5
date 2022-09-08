@@ -1,0 +1,19 @@
+l1 = int(input('Forneça o maior lado do possível triângulo:'))
+l2 = int(input('Forneça outro lado do possível triângulo:'))
+l3 = int(input('Forneça outro lado do possível triângulo:'))
+
+if (l1 + l2) > l3 and (l3 + l1) > l2 and (l2 + l3) > l1:
+  if l1 == l2 and l1 == l3:
+    print('você terá um triângulo Equilátero.')
+
+  elif l1 == l2 or l2 == l3 or l2 == l3:
+    print('você terá um triângulo Isóceles')
+
+  else:
+    print('você terá um triângulo Escaleno')
+
+else:
+  print('os valores nao correspondem a um triângulo.')
+
+
+
