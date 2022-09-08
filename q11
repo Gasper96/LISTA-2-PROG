@@ -1,0 +1,30 @@
+val = int(input('Qual o valor de saque? (saque maximo 600 R$) :'))
+
+cont100 = 0
+cont50 = 0
+cont10 = 0
+cont5 = 0
+cont1 = 0
+
+if 10 <= val <= 600:
+  while val >= 100:
+    val = val - 100
+    cont100 = cont100 + 1
+
+  while val >= 50:
+    val = val - 50
+    cont50 = cont50 + 1
+  
+  while val >= 10:
+    val = val - 10
+    cont10 = cont10 + 1
+
+  while val >= 5:
+    val = val - 5
+    cont5 = cont5 + 1
+
+  while val >= 1:
+    val = val - 1
+    cont1 = cont1 + 1
+
+  print('lhe será entregue',cont100,'- notas de 100 R$ \n',cont50,'- notas de 50 R$\n',cont10,'- notas de 10 R$\n',cont5,'- notas de 5 R$\n',cont1,'- notas de 1 R$.')
