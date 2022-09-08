@@ -1,0 +1,24 @@
+mo = int(input('quantos kg de morango você deseja? '))
+ma = int(input('quantos kg de maçã você deseja?' ))
+
+kgtot = mo + ma
+
+if mo <= 5:
+  valmo = mo * 2.5
+
+if mo > 5:
+  valmo = mo * 2.2
+
+if ma <= 5:
+  valma = ma * 1.8
+
+if ma > 5:
+  valma = ma * 1.5
+
+valtot = valma + valmo
+
+if kgtot > 8 or valtot > 25:
+  valtot * 0.9
+
+print('você pretende comprar', mo, 'kg de morango e', ma, 'kg de maçã')
+print('sua conta deu:', valtot, 'R$.')
