@@ -1,0 +1,36 @@
+m = str(input('responda somente com (sim) ou (nao). \nvocê telefonou para a vítima?'))
+n = str(input('você esteve no local do crime?'))
+o = str(input('você mora proximo a vítima?'))
+p = str(input('você devia algum valor para a vítima?'))
+q = str(input('você ja trabalhou com a vítima?'))
+
+cont = 0
+
+if m == 'sim':
+  cont = cont + 1
+
+if n == 'sim':
+  cont = cont + 1
+
+if o == 'sim':
+  cont = cont + 1
+
+if p == 'sim':
+  cont = cont + 1
+
+if q == 'sim':
+  cont = cont + 1
+
+if cont == 5:
+  print('Assasino.')
+
+if 3 <= cont <= 4:
+  print('cúmplice.')
+
+if cont == 2:
+  print('suspeito.')
+
+if cont < 2:
+  print('inocente.')
+
+
