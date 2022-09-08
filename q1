@@ -1,0 +1,26 @@
+sal = int(input('forneça o salario do colaborador:'))
+
+if sal <= 280:
+  salf = sal * 1.2
+  perc = 20
+  aum = salf - sal
+
+if 280 < sal <= 700:
+  salf = sal * 1.15
+  perc = 15
+  aum = salf - sal
+
+if 700 < sal <= 1500:
+  salf = sal * 1.1
+  perc = 10
+  aum = salf - sal
+
+if 1500 < sal:
+  salf = sal * 1.05
+  perc = 5
+  aum = round(salf) - sal
+
+print('o salario do colaborador antes do reajuste:',sal)
+print('o colaborador receberá um reajuste de', perc,'%.')
+print('que corresponde a:',(aum),'R$.')
+print('a remuneração do colaborador com o reajuste será:',(salf),'R$.')
