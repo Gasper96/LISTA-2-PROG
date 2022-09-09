@@ -1,0 +1,39 @@
+carn = str(input('Escolha a sua carne: (a) para Filé Duplo, (b) para Alcatra e (c) para Picanha:'))
+kg = int(input('Quantos Quilos você deseja ? '))
+cart = str(input('você pretende pagar com o cartão tabajara? '))
+
+tcart = 'Dinheiro'
+desc = 0
+
+if carn == 'a':
+  tip = 'Filé Duplo'
+  if kg <= 5:
+    valf = kg * 4.9
+
+  if kg > 5:
+    valf = kg * 5.8
+
+if carn == 'b':
+  tip = 'Alcatra'
+  if kg <= 5:
+    valf = kg * 5.9
+
+  if kg > 5:
+    valf = kg * 6.8
+
+if carn == 'c':
+  tip = 'Picanha'
+  if kg <= 5:
+    valf = kg * 6.9
+
+  if kg > 5:
+    valf = kg * 7.8
+
+
+if cart == 'sim':
+  tcart = 'Cartão Tabajara'
+  desc = valf * 0.05
+  valf = valf * 0.95
+
+print(tip,'----------',kg,'kg','----------',valf,'R$')
+print('Forma de Pagamento:',tcart,' Você ganhou um desconto de:',desc,'R$.')
